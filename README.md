@@ -29,3 +29,7 @@ This will allow for Node.js to run on localhost:8000 and Express being installed
 The development of this little api to consume has been a good experience on using Node.js and Express to build from scratch.
 
 The steps mentioned in the section to get Node.js and Express running in the project folder are essential. Furthermore it is worth mentioning that a .gitignore should also be created and "node_modules" being mentioned in that file as the modules are quite big and therefore should be avoided to upload to GitHub.
+
+The last lesson learned is the fact, that when consuming an API, the browser (client) may be able to block the request if cors is not enabled on the server. To prevent this, cors need to be installed in the server file:
+
+- npm install cors --save
